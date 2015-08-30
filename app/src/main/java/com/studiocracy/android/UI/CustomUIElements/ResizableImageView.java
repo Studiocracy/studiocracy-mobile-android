@@ -5,9 +5,9 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-public class ResizeableImageView extends ImageView {
+public class ResizableImageView extends ImageView {
 
-    public ResizeableImageView(Context context, AttributeSet attrs) {
+    public ResizableImageView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 

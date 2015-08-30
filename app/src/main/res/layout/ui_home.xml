@@ -5,14 +5,38 @@
     android:weightSum="1"
     tools:context="com.studiocracy.android.UI.UI.Home">
 
-    <!-- TODO Fix Image Scaling -->
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="112dp"
-        android:src="@drawable/banner"
-        android:background="@drawable/selector_transparent"
-        android:scaleType="fitCenter"/>
+    <RelativeLayout
+        android:id="@+id/banner_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- TODO Fix Image Scaling
+            DO NOT use a static layout_height value.
+            It MUST be resizable.
+        -->
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="104dp"
+            android:src="@drawable/banner"
+            android:background="@drawable/selector_transparent"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist Name Here"
+            android:textColor="@color/white"
+            android:layout_alignBottom="@id/banner"
+            android:layout_alignRight="@id/banner"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="4dp"
+            android:clickable="false"
+            android:focusable="false"
+            />
+
+    </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -65,7 +89,5 @@
             android:background="@drawable/selector_transparent"
             android:scaleType="fitCenter" />
 
-
     </LinearLayout>
-
 </LinearLayout>
