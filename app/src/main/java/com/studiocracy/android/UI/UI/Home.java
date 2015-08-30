@@ -1,4 +1,4 @@
-package com.studiocracy.android.UI;
+package com.studiocracy.android.UI.UI;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
