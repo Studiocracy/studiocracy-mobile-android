@@ -53,16 +53,17 @@
     </ScrollView>
 
     <LinearLayout android:layout_height="wrap_content"
-        android:padding="6dp"
         android:orientation="horizontal"
-        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:background="@color/action_bar_bottom"
         android:layout_width="fill_parent"
         android:weightSum="2">
 
         <ImageButton
-            android:layout_height="45dp"
-            android:layout_width="45dp"
+            android:padding="6dp"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
             android:src="@drawable/profile_image_default"
             android:background="@drawable/selector_transparent"
             android:scaleType="fitCenter" />
@@ -72,6 +73,7 @@
             android:layout_weight="1"/>
 
         <ImageButton
+            android:padding="6dp"
             android:layout_height="45dp"
             android:layout_width="45dp"
             android:src="@drawable/plus_sign"
@@ -83,6 +85,7 @@
             android:layout_weight="1"/>
 
         <ImageButton
+            android:padding="6dp"
             android:layout_height="45dp"
             android:layout_width="45dp"
             android:src="@drawable/magnifying_glass"
